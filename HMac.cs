@@ -9,6 +9,7 @@ namespace HashingOpgave
 {
     class HMac
     {
+        //MD5 hmac hash
         public static byte[] MD5Hash(string input, byte[] key)
         {
             using (HMACMD5 md5 = new HMACMD5(key))
@@ -17,6 +18,7 @@ namespace HashingOpgave
             }
         }
 
+        //Sha1 hmac hash
         public static byte[] Sha1Hash(string input, byte[] key)
         {
             using (HMACSHA256 sha1 = new HMACSHA256(key))
@@ -25,6 +27,7 @@ namespace HashingOpgave
             }
         }
 
+        //SHA256 hmac hash
         public static byte[] Sha256Hash(string input, byte[] key)
         {
             using (HMACSHA256 sha256 = new HMACSHA256(key))
@@ -33,6 +36,7 @@ namespace HashingOpgave
             }
         }
 
+        //SHA512 hmac hash
         public static byte[] Sha512Hash(string input, byte[] key)
         {
             using (HMACSHA512 sha512 = new HMACSHA512(key))

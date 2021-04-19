@@ -9,6 +9,7 @@ namespace HashingOpgave
 {
     class Hash
     {
+        //MD5 hash
         public static byte[] MD5Hash(string input)
         {
             using (MD5 md5 = MD5.Create())
@@ -17,6 +18,7 @@ namespace HashingOpgave
             }
         }
 
+        //SHA1 hash
         public static byte[] Sha1Hash(string input)
         {
             using (SHA1 sha1 = SHA1.Create())
@@ -25,6 +27,7 @@ namespace HashingOpgave
             }
         }
 
+        //SHA256 hash
         public static byte[] Sha256Hash(string input)
         {
             using (SHA256 sha256 = SHA256.Create())
@@ -33,6 +36,7 @@ namespace HashingOpgave
             }
         }
 
+        //SHA512 hash
         public static byte[] Sha512Hash(string input)
         {
             using (SHA512 sha512 = SHA512.Create())
